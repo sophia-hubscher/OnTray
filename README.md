@@ -9,6 +9,11 @@
 <img src="res/Time.png" width=600>
 <img src="res/Allergies.png" width=600>
 
+# Stack
+- Recipe data pulled from [Fatsecret API](http://www.fatsecret4j.com)
+- GUI design in Adobe XD
+- Interactive GUI parts written in Java Swing
+
 # Team
 | **Vishal Chandra** | **Sophia Hübscher** |
 | :---: | :---:|
