@@ -132,13 +132,11 @@ public class Display extends JPanel implements MouseMotionListener, MouseListene
         //of them
         if (scene.equals("Home"))
         {
-            if (xLoc > 70 && xLoc < 70 + 385.96 && yLoc > 253.74
-                    && yLoc < 253.74 + 185.26)
+            if (xLoc > 70 && xLoc < 455.96 && yLoc > 253.74 && yLoc < 439)
             { //new recipe
                 this.setToolTipText("new recipe");
                 cursor = Cursor.getPredefinedCursor(Cursor.HAND_CURSOR);
-            } else if (xLoc > 535 && xLoc < 535 + 385.96 && yLoc > 255.74
-                    && yLoc < 255.74 + 185.26)
+            } else if (xLoc > 535 && xLoc < 920.96 && yLoc > 255.74 && yLoc < 441)
             { //allergies
                 this.setToolTipText("allergies");
                 cursor = Cursor.getPredefinedCursor(Cursor.HAND_CURSOR);
@@ -149,23 +147,20 @@ public class Display extends JPanel implements MouseMotionListener, MouseListene
             }
         } else if (scene.equals("Ingredients"))
         {
-            if (xLoc > 76 && xLoc < 76 + 800 && yLoc > 181 && yLoc < 308)
+            if (xLoc > 76 && xLoc < 876 && yLoc > 181 && yLoc < 308)
             { //text bar
                 this.setToolTipText("ingredients");
                 cursor = Cursor.getPredefinedCursor(Cursor.TEXT_CURSOR);
-            } else if (xLoc > 17 && xLoc < 17 + 39.58 && yLoc > 16.34
-                    && yLoc < 16.34 + 42.66)
+            } else if (xLoc > 17 && xLoc < 56.58 && yLoc > 16.34 && yLoc < 59)
             { //home button
                 this.setToolTipText("home");
                 currentText = "";
                 cursor = Cursor.getPredefinedCursor(Cursor.HAND_CURSOR);
-            } else if (xLoc > 350 && xLoc < 350 + 300 && yLoc > 359
-                    && yLoc < 359 + 70)
+            } else if (xLoc > 350 && xLoc < 650 && yLoc > 359 && yLoc < 429)
             { //next step button
                 this.setToolTipText("next step");
                 cursor = Cursor.getPredefinedCursor(Cursor.HAND_CURSOR);
-            } else if (xLoc > 894 && xLoc < 894 + 50 && yLoc > 255
-                    && yLoc < 255 + 50)
+            } else if (xLoc > 894 && xLoc < 944 && yLoc > 255 && yLoc < 305)
             { //add ingredient button
                 this.setToolTipText("add");
                 cursor = Cursor.getPredefinedCursor(Cursor.HAND_CURSOR);
@@ -176,17 +171,15 @@ public class Display extends JPanel implements MouseMotionListener, MouseListene
             }
         } else if (scene.equals("Feature"))
         {
-            if (xLoc > 76 && xLoc < 76 + 800 && yLoc > 181 && yLoc < 308)
+            if (xLoc > 76 && xLoc < 876 && yLoc > 181 && yLoc < 308)
             { //text bar
                 this.setToolTipText("ingredients");
                 cursor = Cursor.getPredefinedCursor(Cursor.TEXT_CURSOR);
-            } else if (xLoc > 17 && xLoc < 17 + 39.58 && yLoc > 16.34
-                    && yLoc < 16.34 + 42.66)
+            } else if (xLoc > 17 && xLoc < 56.58 && yLoc > 16.34 && yLoc < 59)
             { //home button
                 this.setToolTipText("home");
                 cursor = Cursor.getPredefinedCursor(Cursor.HAND_CURSOR);
-            } else if (xLoc > 350 && xLoc < 350 + 300 && yLoc > 359
-                    && yLoc < 359 + 70)
+            } else if (xLoc > 350 && xLoc < 650 && yLoc > 359 && yLoc < 429)
             { //next step button
                 this.setToolTipText("next step");
                 cursor = Cursor.getPredefinedCursor(Cursor.HAND_CURSOR);
@@ -197,18 +190,15 @@ public class Display extends JPanel implements MouseMotionListener, MouseListene
             }
         } else if (scene.equals("Time"))
         {
-            if (xLoc > 70 && xLoc < 70 + 385.96 && yLoc > 253.74
-                    && yLoc < 253.74 + 185.26)
+            if (xLoc > 17 && xLoc < 56.58 && yLoc > 16.34 && yLoc < 59)
             { //home button
                 this.setToolTipText("home");
                 cursor = Cursor.getPredefinedCursor(Cursor.HAND_CURSOR);
-            } else if (xLoc > 350 && xLoc < 350 + 300 && yLoc > 451
-                    && yLoc < 451 + 70)
+            } else if (xLoc > 350 && xLoc < 650 && yLoc > 451 && yLoc < 521)
             { //next step button
                 this.setToolTipText("next step");
                 cursor = Cursor.getPredefinedCursor(Cursor.HAND_CURSOR);
-            } else if (xLoc > 234.92 && xLoc < 234.92 + 529.32 && yLoc > 244
-                    && yLoc < 391.32)
+            } else if (xLoc > 234.92 && xLoc < 764.24 && yLoc > 244 && yLoc < 391.32)
             { //time line
                 this.setToolTipText("time");
                 cursor = Cursor.getPredefinedCursor(Cursor.TEXT_CURSOR);
@@ -219,8 +209,7 @@ public class Display extends JPanel implements MouseMotionListener, MouseListene
             }
         } else if (scene.equals("Meal"))
         {
-            if (xLoc > 17 && xLoc < 17 + 39.58 && yLoc > 16.34
-                && yLoc < 16.34 + 42.66)
+            if (xLoc > 17 && xLoc < 56.58 && yLoc > 16.34 && yLoc < 59)
             { //home button
                 this.setToolTipText("home");
                 cursor = Cursor.getPredefinedCursor(Cursor.HAND_CURSOR);
@@ -231,8 +220,7 @@ public class Display extends JPanel implements MouseMotionListener, MouseListene
             }
         } else if (scene.equals("Sorry"))
         {
-            if (xLoc > 17 && xLoc < 17 + 39.58 && yLoc > 16.34
-                    && yLoc < 16.34 + 42.66)
+            if (xLoc > 17 && xLoc < 56.58 && yLoc > 16.34 && yLoc < 59)
             { //home button
                 this.setToolTipText("home");
                 cursor = Cursor.getPredefinedCursor(Cursor.HAND_CURSOR);
@@ -247,19 +235,16 @@ public class Display extends JPanel implements MouseMotionListener, MouseListene
             { //text bar
                 this.setToolTipText("allergens");
                 cursor = Cursor.getPredefinedCursor(Cursor.TEXT_CURSOR);
-            } else if (xLoc > 17 && xLoc < 17 + 39.58 && yLoc > 16.34
-                    && yLoc < 16.34 + 42.66)
+            } else if (xLoc > 17 && xLoc < 56.58 && yLoc > 16.34 && yLoc < 59)
             { //home button
                 this.setToolTipText("home");
                 currentText = "";
                 cursor = Cursor.getPredefinedCursor(Cursor.HAND_CURSOR);
-            } else if (xLoc > 350 && xLoc < 350 + 300 && yLoc > 359
-                    && yLoc < 359 + 70)
+            } else if (xLoc > 350 && xLoc < 650 && yLoc > 359 && yLoc < 429)
             { //next step button
                 this.setToolTipText("all set");
                 cursor = Cursor.getPredefinedCursor(Cursor.HAND_CURSOR);
-            } else if (xLoc > 894 && xLoc < 894 + 50 && yLoc > 255
-                    && yLoc < 255 + 50)
+            } else if (xLoc > 894 && xLoc < 944 && yLoc > 255 && yLoc < 305)
             { //add ingredient button
                 this.setToolTipText("add");
                 cursor = Cursor.getPredefinedCursor(Cursor.HAND_CURSOR);
@@ -285,30 +270,25 @@ public class Display extends JPanel implements MouseMotionListener, MouseListene
 
         if (scene.equals("Home"))
         {
-            if (xLoc > 70 && xLoc < 70 + 385.96 && yLoc > 234.74
-                        && yLoc < 234.74 + 185.26)
+            if (xLoc > 70 && xLoc < 455.96 && yLoc > 253.74 && yLoc < 439)
             { //new recipe
                 scene = "Ingredients";
-            } else if (xLoc > 535 && xLoc < 535 + 385.96 && yLoc > 255.74
-                    && yLoc < 255.74 + 185.26)
+            } else if (xLoc > 535 && xLoc < 920.96 && yLoc > 255.74 && yLoc < 441)
             { //allergies
                 scene = "Allergies";
             }
         }
         else if (scene.equals("Ingredients"))
         {
-            if (xLoc > 17 && xLoc < 17 + 39.58 && yLoc > 16.34
-                    && yLoc < 16.34 + 42.66)
+            if (xLoc > 17 && xLoc < 56.58 && yLoc > 16.34 && yLoc < 59)
             { //home button
                 goToNextScreen("Home");
             }
-            else if (xLoc > 350 && xLoc < 350 + 300 && yLoc > 359
-                    && yLoc < 359 + 70)
+            else if (xLoc > 350 && xLoc < 650 && yLoc > 359 && yLoc < 429)
             { //next step button
                 goToNextScreen("Feature");
             }
-            else if (xLoc > 894 && xLoc < 894 + 50 && yLoc > 255
-                    && yLoc < 255 + 50)
+            else if (xLoc > 894 && xLoc < 944 && yLoc > 255 && yLoc < 305)
             { //add ingredient button
                 ingredients.add(currentText);
                 currentText = "";
@@ -316,13 +296,12 @@ public class Display extends JPanel implements MouseMotionListener, MouseListene
         }
         else if (scene.equals("Feature"))
         {
-            if (xLoc > 17 && xLoc < 17 + 39.58 && yLoc > 16.34
-                    && yLoc < 16.34 + 42.66)
+            if (xLoc > 17 && xLoc < 56.58 && yLoc > 16.34 && yLoc < 59)
             { //home button
                 goToNextScreen("Home");
             }
-            else if (xLoc > 350 && xLoc < 350 + 300 && yLoc > 359
-                && yLoc < 359 + 70 && !(currentText.equals("") ||
+            else if (xLoc > 350 && xLoc < 650 && yLoc > 359 && yLoc < 429 &&
+                    !(currentText.equals("") ||
                 currentText.equals(null)))
             { //next step button
                 mustHaveIngredient = currentText;
@@ -332,14 +311,13 @@ public class Display extends JPanel implements MouseMotionListener, MouseListene
         }
         else if (scene.equals("Time"))
         {
-            if (xLoc > 17 && xLoc < 17 + 39.58 && yLoc > 16.34
-                    && yLoc < 16.34 + 42.66)
+            if (xLoc > 17 && xLoc < 56.58 && yLoc > 16.34 && yLoc < 59)
             { //home button
                 goToNextScreen("Home");
             }
-            else if (xLoc > 350 && xLoc < 350 + 300 && yLoc > 451
-                    && yLoc < 451 + 70 && !(currentText.equals("") ||
-                    currentText.equals(null)))
+            else if (xLoc > 350 && xLoc < 650 && yLoc > 451 && yLoc < 521 &&
+                    !(currentText.equals("") ||
+                currentText.equals(null)))
             { //next step button
                 prepTime = Integer.parseInt(currentText.substring(0, 2)) * 60 +
                         Integer.parseInt(currentText.substring(3, 5));
@@ -348,35 +326,30 @@ public class Display extends JPanel implements MouseMotionListener, MouseListene
         }
         else if (scene.equals("Meal"))
         {
-            if (xLoc > 17 && xLoc < 17 + 39.58 && yLoc > 16.34
-                    && yLoc < 16.34 + 42.66)
+            if (xLoc > 17 && xLoc < 56.58 && yLoc > 16.34 && yLoc < 59)
             { //home button
                 goToNextScreen("Home");
             }
         }
         else if (scene.equals("Sorry"))
         {
-            if (xLoc > 17 && xLoc < 17 + 39.58 && yLoc > 16.34
-                    && yLoc < 16.34 + 42.66)
+            if (xLoc > 17 && xLoc < 56.58 && yLoc > 16.34 && yLoc < 59)
             { //home button
                 goToNextScreen("Home");
             }
         }
         else if (scene.equals("Allergies"))
         {
-            if (xLoc > 17 && xLoc < 17 + 39.58 && yLoc > 16.34
-                    && yLoc < 16.34 + 42.66)
+            if (xLoc > 17 && xLoc < 56.58 && yLoc > 16.34 && yLoc < 59)
             { //home button
                 goToNextScreen("Home");
             }
-            else if (xLoc > 350 && xLoc < 350 + 300 && yLoc > 359
-                    && yLoc < 359 + 70)
+            else if (xLoc > 350 && xLoc < 650 && yLoc > 359 && yLoc < 429)
             { //next step button
                 goToNextScreen("Home");
                 serializeArrayList(allergens, "allergies.txt");
             }
-            else if (xLoc > 894 && xLoc < 894 + 50 && yLoc > 255
-                    && yLoc < 255 + 50)
+            else if (xLoc > 894 && xLoc < 944 && yLoc > 255 && yLoc < 305)
             { //add allergen button
                 allergens.add(currentText);
                 currentText = "";
@@ -435,7 +408,7 @@ public class Display extends JPanel implements MouseMotionListener, MouseListene
     }
 
     /**
-     * deserialize the allergens ArrayList from txt file
+     * Deserialize the allergens ArrayList from txt file
      *
      * @param fileName name of file
      */
