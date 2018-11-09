@@ -210,7 +210,7 @@ public class Display extends JPanel implements MouseMotionListener, MouseListene
             } else if (xLoc > 234.92 && xLoc < 234.92 + 529.32 && yLoc > 244
                     && yLoc < 391.32)
             { //time line
-                this.setToolTipText("##:##");
+                this.setToolTipText("time");
                 cursor = Cursor.getPredefinedCursor(Cursor.TEXT_CURSOR);
             } else
             { //no tool tip text & default cursor
