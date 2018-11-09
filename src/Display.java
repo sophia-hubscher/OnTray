@@ -285,7 +285,7 @@ public class Display extends JPanel implements MouseMotionListener, MouseListene
 
         if (scene.equals("Home"))
         {
-            if (xLoc > 70 && xLoc < 70 + 245.12 && yLoc > 234.74
+            if (xLoc > 70 && xLoc < 70 + 385.96 && yLoc > 234.74
                         && yLoc < 234.74 + 185.26)
             { //new recipe
                 scene = "Ingredients";
@@ -383,7 +383,6 @@ public class Display extends JPanel implements MouseMotionListener, MouseListene
             }
         }
     }
-    
     
     /**
      * Goes to next screen & clears currentText
