@@ -91,7 +91,11 @@ public class APIClient
 
         Response<CompactRecipe> response = service.searchRecipes(query);
 
-        return response.getResults();
+        try
+        {
+            return response.getResults();
+        }
+        catch(NullPointerException npe){return null;}
     }
 
 
@@ -133,7 +137,7 @@ public class APIClient
      */
     public ArrayList<Recipe> expandRecipes(List<CompactRecipe> compactRecipes)
     {
-        ArrayList<Recipe> expandedRecipes = new ArrayList<Recipe>();
+        ArrayList<Recipe> expandedRecipes = new ArrayList<>();
 
         for (CompactRecipe recipe : compactRecipes)
         {
