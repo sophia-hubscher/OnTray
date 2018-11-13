@@ -206,6 +206,14 @@ public class Window extends JFrame implements ActionListener, KeyListener
                     display.currentText = "  :  ";
                     display.scene = "Time";
                 }
+            } else if (display.scene.equals("Time"))
+            {
+                if(!(display.currentText.equals("") || display.currentText.equals(null)))
+                {
+                    display.prepTime = Integer.parseInt(display.currentText.substring(0, 2)) * 60 +
+                            Integer.parseInt(display.currentText.substring(3, 5));
+                    display.scene = "Meal";
+                }
             }
         }
     }
