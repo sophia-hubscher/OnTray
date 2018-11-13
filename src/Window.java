@@ -112,7 +112,13 @@ public class Window extends JFrame implements ActionListener, KeyListener
                 searchCriteria = new SearchCriteria(display.prepTime, display.ingredients,
                         display.allergens, display.mustHaveIngredient);
 
+                //loading symbol while user waits for recipe
+                display.cursor = Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR);
+
                 recipeResponses = apiClient.search(searchCriteria);
+
+                //changing cursor back after apiClient.search() has finished
+                display.cursor = Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR);
 
                 if (recipeResponses.size() == 0) display.scene = "Sorry";
 
