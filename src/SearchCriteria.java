@@ -10,26 +10,26 @@ public class SearchCriteria
     private int prepTime;
     private ArrayList<String> ingredients;
     private ArrayList<String> allergens;
-    private String mustHaveIngredient;
+    private String priorityIngredient;
 
     /**
      * Constructor of SearchCriteria object
      *
      * @param prepTime The preparation time of the dish
      * @param ingredients Ingredients which the user has
-     * @param mustHaveIngredient Priority Ingredient
+     * @param priorityIngredient Priority Ingredient
      */
     public SearchCriteria(int prepTime, ArrayList<String> ingredients, ArrayList<String> allergens,
-                          String mustHaveIngredient)
+                          String priorityIngredient)
     {
         this.prepTime = prepTime;
         this.ingredients = ingredients;
         this.allergens = allergens;
-        this.mustHaveIngredient = mustHaveIngredient;
+        this.priorityIngredient = priorityIngredient;
     }
 
     public int getPrepTime() {return prepTime;}
     public ArrayList<String> getIngredients() {return ingredients;}
     public ArrayList<String> getAllergens() { return allergens;}
-    public String getMustHaveIngredient() {return mustHaveIngredient;}
+    public String getPriorityIngredient() {return priorityIngredient;}
 }

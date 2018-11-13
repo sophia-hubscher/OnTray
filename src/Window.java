@@ -123,8 +123,6 @@ public class Window extends JFrame implements ActionListener, KeyListener
                         recipeResponses.get(0).getIngredients() + "\n\n" +
                         "Directions: \n" + recipeResponses.get(0).getDirections();
 
-                //System.out.println(searchCriteria.getIngredients() + "\n" + searchCriteria.getPrepTime() + "\n" + searchCriteria.getAllergens() + "\n" + searchCriteria.getMustHaveIngredient());
-
                 showText.setText(recipeText);
             }
 
