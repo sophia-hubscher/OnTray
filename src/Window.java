@@ -123,7 +123,7 @@ public class Window extends JFrame implements ActionListener, KeyListener
                 String recipeText = recipeResponses.get(0).getDescription() + "\n\n" +
                         "Prep time: " + recipeResponses.get(0).getPrepTime() + " minutes\n\n" +
                         "Ingredients: \n" +
-                        recipeResponses.get(0).getIngredients() + "\n\n" +
+                        recipeResponses.get(0).getIngredients() + "\n" +
                         "Directions: \n" + recipeResponses.get(0).getDirections();
 
                 showText.setText(recipeText);
