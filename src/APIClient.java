@@ -41,9 +41,10 @@ public class APIClient
             }
 
             String directionsString = "";
+            int    iteration        = 1;
             for(Direction direction : recipe.getDirections())
             {
-                directionsString += direction.getDescription() + "\n";
+                directionsString += iteration + ") " + direction.getDescription() + "\n";
             }
 
             responses.add(new RecipeResponse(recipe.getPreparationTime(), recipe.getDescription(), ingredientsString,
